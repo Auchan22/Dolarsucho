@@ -68,12 +68,5 @@ fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
     <p>Valor Venta: $${data[4].casa.venta}</p>
     <i class="fal fa-sack-dollar"></i>
     `
-
-    bitcoin.innerHTML = `
-    <h4>Bitcoin</h4>
-    <p>Valor Compra: $${data[5].casa.compra}</p>
-    <p>Valor Venta: $${data[5].casa.venta}</p>
-    <i class="fab fa-bitcoin" ></i>
-    `
 })
 .catch()
