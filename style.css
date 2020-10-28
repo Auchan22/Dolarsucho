@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.todo{
+    background: #8db596;
+}
+
+.mtop_sm{margin-top: 15px;}
+.mtop_md{margin-top: 30px;}
+.mtop_lg{margin-top: 45px;}
+
+.mbot_sm{margin-bottom: 15px;}
+.mbot_md{margin-bottom: 30px;}
+.mbot_lg{margin-bottom: 45px;}
+
+.ptop_sm{padding-top: 15px;}
+.ptop_md{padding-top: 30px;}
+.ptop_lg{padding-top: 45px;}
+
+.pbot_sm{padding-bottom: 15px;}
+.pbot_md{padding-bottom: 30px;}
+.pbot_lg{padding-bottom: 45px;}
+
+.centrado{
+    margin: 0px auto;
+    max-width: 960px;
+    text-align: center;
+}
+
+header{
+    background-color: #92817a;
+    height: 120px;
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif ;
+    color: #e8e8e8;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.68);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.68);
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+header p {
+    font-size: 26px;
+}
+
+/*Fin Header*/
+/*Comienzo Nav*/
+
+nav{
+    background-color: #89beb3;
+    min-height: 70px;
+    margin-top: 1px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.68);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.68);
+}
+
+nav ul li{
+    font-family: 'Noto Sans JP', sans-serif;
+    text-decoration: none;
+    color: #382933;
+    font-size: 20px;
+}
+
+nav ul li:hover{
+    color:#335d2d;
+    cursor: pointer;
+}
+
+/*Fin Nav*/
+/*Inicio de Cards*/
+
+.activo{color:#335d2d;}
+
+
+#info_dolar{
+    background-color: #8db596;
+    min-height: 700px;
+}
+
+#info_dolar .container{
+    width: 500px;
+}
+
+.panels{
+    border-radius: 10px;
+    margin-top: 100px;
+    height: 500px;
+    background-color: #a6a6a4;
+    -webkit-box-shadow: 0px 0px 31px 6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 31px 6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 31px 6px rgba(0,0,0,0.75);
+    position: relative;
+}
+
+.panels_item{
+    position: absolute;
+    left: -5000px; 
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.activo_pn{
+    position: relative; 
+    left:0px;
+}
+
+.panels_item h4, .panels_item p{
+    text-align: center;
+}
+
+.panels_item h4{
+    font-size: 30px ;
+    padding:25px 0px 15px 0px;
+    font-weight: bolder;
+}
+
+.panels_item p{
+    font-size: 20px ;
+    padding:10px 0px;
+}
+
+/*Fin de cards*/
+/*Inicio de Footer*/
+
+.bg-dark{ background-color: #625261;}
+
+#footer div i {
+    color:white;
+    font-size: 45px;
+    margin: 25px 20px;
+}
+
+#footer div a i:hover {
+    color:#2d6187;
+}
+/*Fin de footer*/
