@@ -23,21 +23,27 @@ let dolar_tur = d.getElementById('d_tur');
 let dolar_bol = d.getElementById('d_bol');
 let bitcoin = d.getElementById('bit');
 
+function Redondear(n){
+    let resultado = n.replace('""',"")
+    return parseFloat(resultado)
+}
+
 fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
 .then( res => res.json())
 .then(data => {
     /*console.log(data[0]);*/
+    // console.log(Redondear(data[0].casa.compra))
     dolar_of.innerHTML = `
     <h4> Oficial</h4>
-    <p>Valor Compra: $${data[7].casa.compra}</p>
-    <p>Valor Venta: $${data[7].casa.venta}</p>
+    <p>Valor Compra: $${Redondear(data[7].casa.compra)}</p>
+    <p>Valor Venta: $${Redondear(data[7].casa.venta)}</p>
     <i class="far fa-money-bill-alt"></i>
     `
 
     dolar_bl.innerHTML = `
     <h4> Blue</h4>
-    <p>Valor Compra: $${data[1].casa.compra}</p>
-    <p>Valor Venta: $${data[1].casa.venta}</p>
+    <p>Valor Compra: $${Redondear(data[1].casa.compra)}</p>
+    <p>Valor Venta: $${Redondear(data[1].casa.venta)}</p>
     <i class="far fa-money-bill-alt"></i>
     `
 
@@ -50,22 +56,22 @@ fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
 
     dolar_ccl.innerHTML = `
     <h4> CCL</h4>
-    <p>Valor Compra: $${data[3].casa.compra}</p>
-    <p>Valor Venta: $${data[3].casa.venta}</p>
+    <p>Valor Compra: $${Redondear(data[3].casa.compra)}</p>
+    <p>Valor Venta: $${Redondear(data[3].casa.venta)}</p>
     <i class="fas fa-chart-line"></i>
     `
 
     dolar_tur.innerHTML = `
     <h4> Turista</h4>
     <p>Valor Compra: S/C</p>
-    <p>Valor Venta: $${data[6].casa.venta}</p>
+    <p>Valor Venta: $${Redondear(data[6].casa.venta)}</p>
     <i class="fas fa-umbrella-beach"></i>
     `
 
     dolar_bol.innerHTML = `
     <h4> Bolsa</h4>
-    <p>Valor Compra: $${data[4].casa.compra}</p>
-    <p>Valor Venta: $${data[4].casa.venta}</p>
+    <p>Valor Compra: $${Redondear(data[4].casa.compra)}</p>
+    <p>Valor Venta: $${Redondear(data[4].casa.venta)}</p>
     <img src="./bolsa-de-dinero.svg" alt="bolsa-de-dinero">
     `
 })
