@@ -115,9 +115,9 @@ header p {
   width: 300px !important;
   min-height: 300px;
   background-color: #cbf1f5;
-  -webkit-box-shadow: 10px 10px 33px 0px rgba(0, 0, 0, 0.11);
-  -moz-box-shadow: 10px 10px 33px 0px rgba(0, 0, 0, 0.11);
-  box-shadow: 10px 10px 33px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 10px 10px 240px -1px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 10px 10px 240px -1px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 10px 10px 240px -1px rgba(0, 0, 0, 0.42);
 }
 
 .panels_item h4,
