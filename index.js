@@ -32,7 +32,6 @@ fetch('https://www.dolarsi.com/api/api.php?type=valoresprincipales')
 .then( res => res.json())
 .then(data => {
     /*console.log(data[0]);*/
-    // console.log(Redondear(data[0].casa.compra))
     dolar_of.innerHTML = `
     <h4> Oficial</h4>
     <p>Valor Compra: $${Redondear(data[7].casa.compra)}</p>
